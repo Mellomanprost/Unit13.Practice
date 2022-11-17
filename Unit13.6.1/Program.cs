@@ -13,6 +13,7 @@ namespace Unit13._6._1
             string allText = File.ReadAllText(path);
             char[] delimiters = { ' ', '\r', '\n' };
             string[] words = allText.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+            
             var stopWatch = Stopwatch.StartNew();
             var listOFWords = new List<string>(words);
             Console.WriteLine($"{stopWatch.Elapsed.TotalMilliseconds}мс затрачено на добавления текста в List");
