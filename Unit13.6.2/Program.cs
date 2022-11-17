@@ -26,7 +26,7 @@ namespace Unit13._6._2
                 }
                 numberOfWordsDictionary[word] += 1;
             }
-            
+
             /// Сортируем словарь по значениям (т.е. количеству повторений слов) и делаем реверс, чтобы начало было с самого большого кол-ва повторений
             var mySortedList = numberOfWordsDictionary.OrderBy(d => d.Value).ToList();
             mySortedList.Reverse();

@@ -9,8 +9,8 @@ namespace Unit13._6._1
     {
         static void Main(string[] args)
         {
-            string path = @"c:\SkillFactory\Text1.txt";
-            string allText = File.ReadAllText(path);
+            string pathToFile = @"c:\SkillFactory\Text1.txt";
+            string allText = File.ReadAllText(pathToFile);
             char[] delimiters = { ' ', '\r', '\n' };
             string[] words = allText.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
             
